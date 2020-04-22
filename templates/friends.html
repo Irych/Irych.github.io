@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Друзья</title>
+</head>
+<body>
+<header>
+	<div class="header-left">Привет, {{ username }}!</div>
+</header>
+    <h3>Список 5 твоих друзей</h3>
+    {% for item in items %}
+    <ul>
+    <li>ID: {{ item.id }}</li>
+    <li>ИМЯ: {{ item.first_name }}</li>
+    <li>ФАМИЛИЯ: {{ item.last_name }}</li>
+    </ul>
+    {% endfor %}
+
+</body>
+</html>
+
+
+
